@@ -49,21 +49,21 @@ export default class AppHeader extends Component {
 					<div className="g-col">
 
 						<div className="header-title-wrapper" onClick={this.navigateToHomePage}>
-							<img src={logo} className="content logo" alt="bramgiessen.com logo"/>
-							<span className="content">Youtube Video Sync • React, Redux & Socket.IO</span>
+							<img src={logo} className="content logo" alt="showtube.ml logo"/>
+							<span className="content">ShowTUBE</span>
 						</div>
 
 						<ul className="header-actions">
 							{this.renderSearchButton ( user.userName )}
 							<li>
-								<a title="Visit my portfolio site" href="http://bramgiessen.com" target="_blank"
+								<a title="Visit my portfolio site" href="http://showtube.ml" target="_blank"
 								   rel="noopener noreferrer">
 									<span className="btn btn-icon fa fa-globe"/>
 								</a>
 							</li>
 							<li>
 								<a title="Open this project on Github"
-								   href="https://github.com/brambo48/react-youtube-sync"
+								   href="https://github.com/Aimen25Cne/ShareTUBE"
 								   target="_blank" rel="noopener noreferrer">
 									<span className="btn btn-icon fa fa-github"/>
 								</a>

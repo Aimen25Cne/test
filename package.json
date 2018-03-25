@@ -1,5 +1,5 @@
 {
-  "name": "ShareTUBE",
+  "name": "ShowTUBE",
   "version": "2.4.9",
   "description": "A socket.io server & React client providing synchronized playback of youtube videos between multiple users",
   "homepage": "https://share-tube.herokuapp.com",
