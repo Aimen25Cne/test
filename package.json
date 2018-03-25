@@ -1,0 +1,68 @@
+{
+  "name": "ShareTUBE",
+  "version": "2.4.9",
+  "description": "A socket.io server & React client providing synchronized playback of youtube videos between multiple users",
+  "homepage": "https://share-tube.herokuapp.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aimen25Cne/ShareTUBE"
+  },
+  "author": {
+    "name": "Aimen Houhamdi",
+    "email": "aimen25hdi@gmail.com"
+  },
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=7.x",
+    "npm": ">=3.x"
+  },
+  "scripts": {
+    "start": "concurrently -r \"npm run start:server\" \"npm run start:client\"",
+    "start:client": "react-scripts start",
+    "start:server": "nodemon --require reify ./server/main.js",
+    "start-prod": "npm run start-prod:server",
+    "start-prod:server": "DEBUG=APP:MAIN cross-env NODE_ENV=production node --require reify ./server/main.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build",
+    "postinstall": "npm run build"
+  },
+  "proxy": {
+    "/socket.io": {
+      "target": "ws://localhost:3001",
+      "ws": true
+    }
+  },
+  "dependencies": {
+    "classnames": "2.2.5",
+    "compression": "1.7.0",
+    "concurrently": "3.5.0",
+    "cross-env": "5.0.1",
+    "debug": "2.6.8",
+    "express": "4.15.3",
+    "font-awesome": "4.7.0",
+    "helmet": "3.8.1",
+    "lodash": "4.17.4",
+    "npm": "5.3.0",
+    "query-string": "5.0.0",
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
+    "react-player": "^0.24.6",
+    "react-redux": "5.0.5",
+    "react-router": "3.0.5",
+    "react-scripts": "1.0.10",
+    "react-truncate": "2.1.5",
+    "redux": "3.7.2",
+    "redux-socket.io": "1.4.0",
+    "redux-thunk": "2.2.0",
+    "seamless-immutable": "7.1.2",
+    "socket.io": "2.0.3",
+    "socket.io-client": "2.0.3",
+    "reify": "0.4.4"
+  },
+  "devDependencies": {
+    "nodemon": "1.11.0"
+  }
+}
