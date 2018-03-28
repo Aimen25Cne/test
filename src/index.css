@@ -34,7 +34,7 @@ body {
 .g-row {
     margin: 0 auto;
     width: 100%;
-    max-width: 960px;
+    max-width: 1000px;
     display: inherit;
     flex: inherit;
     flex-direction: inherit;

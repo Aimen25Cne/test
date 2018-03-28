@@ -18,7 +18,7 @@ export const searchActions = {
 			dispatch ( searchActions.toggleSearchField() )
 
 			// Navigate to the search results
-			dispatch ( appActions.navigateToPath ( `/search/${query}` ) )
+			dispatch ( appActions.navigateToPath ( `/search/` + encodeURIComponent(`${query}`) ) )
 		}
 	}
 }

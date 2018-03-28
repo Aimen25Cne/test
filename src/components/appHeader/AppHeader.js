@@ -56,18 +56,12 @@ export default class AppHeader extends Component {
 						<ul className="header-actions">
 							{this.renderSearchButton ( user.userName )}
 							<li>
-								<a title="Visit my portfolio site" href="http://showtube.ml" target="_blank"
+								<a title="Like Us On Facebook" href="https://facebook.com/ShowTUBE.ml/" target="_blank"
 								   rel="noopener noreferrer">
 									<span className="btn btn-icon fa fa-globe"/>
 								</a>
 							</li>
-							<li>
-								<a title="Open this project on Github"
-								   href="https://github.com/Aimen25Cne/ShareTUBE"
-								   target="_blank" rel="noopener noreferrer">
-									<span className="btn btn-icon fa fa-github"/>
-								</a>
-							</li>
+
 						</ul>
 
 					</div>
