@@ -26,7 +26,7 @@ export const videoPlayerConfig = {
 //-------------------------------------
 // Initial query for videos to display on the browse page
 export const initialVideoQuery = {
-	query: 'film action comedy adventure full movie hollywood',
+	query: 'جناح المعرفة',
 	videoType: 'any'
 }
 
